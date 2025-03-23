@@ -1,3 +1,554 @@
+console.time("yd 2nd ms");
+var ThemeColorButtonPressed = "black";
+
+/*= LOADING WIFI ANIMATION =*/
+var _spinnerSize = "14px";
+var _spinnerColor = "darkgray";
+var _spinnerDCcolor = "red";
+
+//*= DASHBOARD SETTINGS =*//
+var imageBannerAutoH = "\
+@media(min-width: 200px){.lds-load-b{height: 100px;}}\
+@media(min-width: 250px){.lds-load-b{height: 128px;}}\
+@media(min-width: 300px){.lds-load-b{height: 156px;}}\
+@media(min-width: 350px){.lds-load-b{height: 184px;}}\
+@media(min-width: 400px){.lds-load-b{height: 212px;}}\
+@media(min-width: 450px){.lds-load-b{height: 240px;}}\
+@media(min-width: 500px){.lds-load-b{height: 268px;}}\
+@media(min-width: 550px){.lds-load-b{height: 296px;}}\
+@media(min-width: 600px){.lds-load-b{height: 324px;}}\
+@media(min-width: 650px){.lds-load-b{height: 352px;}}\
+@media(min-width: 700px){.lds-load-b{height: 380px;}}\
+@media(min-width: 750px){.lds-load-b{height: 408px;}}\
+@media(min-width: 800px){.lds-load-b{height: 436px;}}\
+@media(min-width: 850px){.lds-load-b{height: 464px;}}\
+@media(min-width: 900px){.lds-load-b{height: 492px;}}\
+@media(min-width: 992px){.lds-load-b{height: 300px;}}\
+@media(min-width: 1000px){.lds-load-b{height: 400px;}}\
+@media(min-width: 1100px){.lds-load-b{height: 500px;}}\
+@media(min-width: 1200px){.lds-load-b{height: 600px;}}\
+";
+var imageBannerObjectFit = "fill";
+var imageBannerRadius = "0.3rem";
+
+var pFavIcon = "default";//icon.ico
+var CodeInputType = 0; //0=Hidden,1=Visible
+var EnableInfoInCodeStyle = 0;//ShowClientInfoInCodeStyle
+var AutoConnectExtendCreditCode = 0;//ConnectAutomaticallyWhenUsingCreditCode
+var EnableChatMe = 1;//ChatMeTextOnChatIcon
+var DashVendoName = 1;//DisplayVendoNameInsteadSelectVendo
+var InsertVendoName = 1;//DisplayVendoNameInsertCoin
+var EnableRateDesc = 1; //ShowRateDescription
+var DataReading = 500;//Default 1000
+var BuyLoadCode = 0;//OnlyCodePayment
+var showRedeemBtn = 1;
+var FlipVenStatPos = 0;
+var LiveTVTop = 0;
+var InsertCBDelay = 1500;//InsideInsertWhenCoinInButtonDelay
+var ForceDisTut = 0;
+var NotifDelay = 3800;//NotificationPopUpDelay
+var ProgressSeconds = 1;//DisplaySecondsInsertProgressBar
+var RemoveICT = 1;//InsertCoinTitle
+var RemoveEVS = 0;//EloadVendoSelection
+var TeleNoteDelay = 500;//DefaultTelegramNoteDelayForAccurateDataLog
+var TeleRecvReadDelay = 2500;//RecvFromTeleBotReply
+var TeleRecvPopHide = 10000;//RecvMsgPopDelayFromTeleReply
+var TeleRecvPopCStyle = 'm';//i=info(blue),s=success(lightgreen),w=warning(darkgold),e=error(darkred),m=msg(darkorchid)
+var TeleReplySecRead = 10;//SecondsForTheReplyMsgToExpire
+var CodeActDelay = 1500;//CodeActivationDelay
+
+var EnableBackMusic = 0; //1 Click/Tap To Play
+var BackMusicFile = ""; //Mp3 in Files
+
+var EnableBtnSoundEffect = 1;
+var EnableCloseSoundEffect = 1;
+
+/*= INFO'S =*/
+var enableDate = 1;
+var enableInterface = 1;
+var enableNetStatus = 1;
+var enableConStatus = 1;
+var enableCode = 1;
+var enableID = 1;
+var enableMAC = 1;
+var enableIPAddress = 1;
+var enableTimeType = 1;
+var enableReserveTime = 1;
+var enableUptime = 1;
+
+/*= TELEGRAM =*/
+var etInitTime = 0;
+var etInitDate = 1;
+var etID = 0;
+var etCredit = 1;
+var etTime = 1;
+var etTType = 1;
+var etPoint = 1;
+//*= END DASHBOARD SETTINGS =*//
+
+//InsertAdditionalKeyframesinHead
+var addKeyframes = "\
+@keyframes animatedtag2{0% {left:-6px;}1% {left:6px;}2% {left:-5px;}3% {left:5px;}4% {left:-4px;}5% {left:4px;}6% {left:-3px;}7% {left:3px;}8% {left:-2px;}9% {left:2px;}10% {left:0px;}50% {left:0px;background:linear-gradient(60deg,#FF00FF, #6fba82, #07b39b);}}\
+@keyframes slidebg2{to {background-position:20vw;}}\
+@keyframes animate2{0% {background-position: 0%;}100% {background-position: 400%;}}\
+@keyframes BG2{0% {}50% {background:radial-gradient(circle, midnightblue, black);}100% {}}\
+@keyframes tt-anim {to {background-position: 5000vh;}}\
+";
+//InsertAdditionalCSSinHead
+var addCss = "\
+@font-face{\
+font-family: 'Rapier Zero';\
+src: url('html/RapierZero.ttf') format('opentype');\
+}\
+.toast-msg{\
+color: #fff;\
+background-color: rgba(153, 50, 204, 0.95);\
+border-color: rgba(153, 50, 204, 0.95);\
+}\
+";
+
+//*= COMMON VAR =*//
+var _GBRadius = "0.3rem";
+//*= END COMMON VAR =*//
+
+/*= ENTERTAINMENT BTN =*/
+var ENTButtonText = "Entertainment";
+var ENTButtonFontSize = "14px";
+var ENTButtonTextColor = "#1E90FF";
+var ENTButtonBackColor = "transparent";
+var ENTButtonBorderStyle = "1px solid #1E90FF";
+var ENTButtonFontWeight = "500";
+var ENTModalText = "Entertainment";
+var _enttXColor = "inherit";
+/*= MORE ENT BTN =*/
+var MEButtonFontSize = "14px";
+var MEButtonTextColor = "#1E90FF";
+var MEButtonBackColor = "transparent";
+var MEButtonBorderStyle = "1px solid #1E90FF";
+var MEButtonFontWeight = "500";
+/*= DEFAULT OFF MOVIE BTN =*/
+var MovieOffButtonText = "OFFLINE MOVIES";
+/*= LIVETV BTN =*/
+var LIVETVButtonText = "LIVE TELEVISION";
+/*= VIVAMAX ONLINE BTN =*/
+var VVM2Link = 'https://asiancoderz.com/ent/vivamax';
+var VVM2ButtonText = "ONLINE VIVAMAX";
+/*= LIVE SABONG BTN =*/
+var LSBLink = 'https://asiancoderz.com/ent/sabong';
+var LSBButtonText = "LIVE SABONG";
+/*= CUSTOM OFFLINE ENT MEDIA PAGE =*/
+var __EntCusPage = [
+	"0#movie#OFFLINE MOVIES#x#0#x",
+	"0#karaoke#OFFLINE KARAOKE#x#0#x",
+	"0#vivamax#OFFLINE VIVAMAX#12345#6#x",
+	"0#anime#OFFLINE ANIME#x#0#x",
+	"0#moviebox#MOVIEBOX#x#0#<iframe src='https://moviebox.ng/' style='position: fixed; top: 0px; bottom: 0px; right: 0px; width: 100%; height: 100%; margin: 0; padding: 0; border: none; display:block; overflow: hidden; z-index: 2;' allowfullscreen>"
+];
+var __passErr0 = "Wrong! Msg Admin For The Pass.";
+var __passInp0 = "Please Input Pass To Access?";
+/*= END ENTERTAINMENT BTN =*/
+
+/*= FEATURE BTN =*/
+/*= BUY VOUCHER =*/
+var BVouchButtonText = "Buy Voucher";
+var BVouchButtonTextColor = "#fc424a";
+var BVouchButtonBackColor = "transparent";
+var BVouchButtonBorderStye = "1px solid #fc424a";
+var BVouchButtonFontWeight = "500";
+/*= BUY E-LOAD =*/
+var BEloadButtonText = "Buy E-Load";
+var BEloadButtonTextColor = "#ffab00";
+var BEloadButtonBackColor = "transparent";
+var BEloadButtonBorderStye = "1px solid #ffab00";
+var BEloadButtonFontWeight = "500";
+/*= GENERATE VOUCHER CODE =*/
+var GVouchButtonText = "Gen Voucher";
+var GVouchButtonTextColor = "#fc424a";
+var GVouchButtonBackColor = "transparent";
+var GVouchButtonBorderStyle = "1px solid #fc424a";
+var GVouchButtonFontWeight = "500";
+var _genVLabelTextColor = "inherit";
+var _genVLabelBackColor = "rgba(15,18,26,0.9)";
+var _genVLabelBorderStyle = "none";
+var _genVInputTextHolder = "Input Credit Here";
+var _genVInputBackColor = "rgb(200,200,200)";
+var _genVInputBorderStyle = "none";
+var _mgenCodeXColor ="#a6a6a6";
+var _mgenBtnTextColor = "#00d25b";
+var _mgenBtnBackColor = "transparent";
+var _mgenBtnBorderStyle = "1px solid #00d25b";
+/*= ONLINE PAY =*/
+var OPAYButtonText = "Pay via E-Wallet";
+var OPAYButtonTextColor = "#ffab00";
+var OPAYButtonBackColor = "transparent";
+var OPAYButtonBorderStye = "1px solid #ffab00";
+var OPAYButtonFontWeight = "500";
+var _opInputTextHolder = "Amount Here";
+var _opInputBackColor = "rgb(200,200,200)";
+var _opInputBorderStyle = "1px solid rgb(113 128 150 / 40%)";
+var _opayNXColor = "inherit";
+/*= CASH-IN =*/
+var BGMCButtonText = "GCash & Maya Cash-In";
+var BGMCButtonTextColor = "#ffab00";
+var BGMCButtonBackColor = "transparent";
+var BGMCButtonBorderStye = "1px solid #ffab00";
+var BGMCButtonFontWeight = "500";
+var _gmcCodeXColor = "inherit";
+var _gmcBtnTextColor = "#00d25b";
+var _gmcBtnBackColor = "transparent";
+var _gmcBtnBorderStyle = "1px solid #00d25b";
+var PayCCButtonText = "Credit Code";
+var PayCCButtonFontSize = "14px";
+var PayCCButtonTextColor = "#00d25b";
+var PayCCButtonBackColor = "transparent";
+var PayCCButtonBorderStyle = "1px solid #00d25b";
+var PayCCButtonFontWeight = "500";
+var PayICButtonText = "Insert Coin";
+var PayICButtonFontSize = "14px";
+var PayICButtonTextColor = "#00d25b";
+var PayICButtonBackColor = "transparent";
+var PayICButtonBorderStyle = "1px solid #00d25b";
+var PayICButtonFontWeight = "500";
+var _cashNXColor = "inherit";
+/*= END FEATURE BTN =*/
+
+/*= CUSTOM FEATURE BTN =*/
+var CusBtn1 = 0; //1=Enable
+var CusBtn1Title = "";//Button Name
+var CusBtn1Type = 0;//0=Modal,1=Link
+var CusBtn1HTMLData = "";//Link Data or Modal Data
+
+var CusBtn2 = 0; //1=Enable
+var CusBtn2Title = "";//Button Name
+var CusBtn2Type = 0;//0=Modal,1=Link
+var CusBtn2HTMLData = "";//Link Data or Modal Data
+
+var CusBtnTextColor = "#1E90FF";
+var CusBtnBackColor = "transparent";
+var CusBtnBorderStyle = "1px solid #1E90FF";
+var CusBtnTextFontWeight = "500";
+var _cusBXColor = "inherit";
+/*= END CUS FEATURE BTN =*/
+
+//PopUpMsg
+var CusAnnPop = 5;//PopupEvery5Minutes
+var CusAnnHTMLData = "<span style='text-align:center; font-weight: 600; font-size: 18px;'>WELCOME</span><span style='text-align:center;font-weight: 500;font-size: 10px;margin-top: 25px;'>Tap/Click Anywhere to Close</span>";
+
+//MEDIA PAGE
+var _mcardBackColor = "#F5F5F5";
+var _mcardTextColor = "black";
+var _mbtnBackColor = "#006e30";
+var _mbtnTextColor = "#fff";
+var _mmodalBackColor = "rgba(15,18,26,0.9)";
+var _mmodalTextColor = "#fff";
+
+//ELOAD PAGE
+var _ecardBackColor = "#F5F5F5";
+
+/*= EDIT UI =*/
+var DefaultBodyTextColor = "#6c7293";
+var DefaultBodyBackColor = "#000";
+
+var UseMp4BackGroundStyle = 0;
+var backGroundMp4Poster = "luffy.jpg"; //Available in Zedge
+var backGroundMp4VidName = "luffy.mp4"; //Available in Zedge
+
+var _cardBackColor = "rgba(25, 28, 36, 0.8)";
+var _cardBorderRadius = "0.3rem";
+var _cardBorderStyle = "1px solid rgba(0, 0, 0, 0.125)";
+
+/*= FIRST BOX =*/
+var TextStatusFontSize = "18px";
+var TextStatusConnectedColor = "#00d25b";
+var TextStatusPausedColor = "#ffab00";
+var TextStatusDisconnectedColor = "#fc424a";
+var TextStatusFontWeight = "500";
+
+var TextCurrentTimeText = "Current Time:";
+var TextCurrentTimeFontSize = "15px";
+var TextCurrentTimeColor = "inherit";
+var TextCurrentTimeFontWeight = "500";
+
+var TextTimeColor = "#fff";
+var TextTimeSize = "20px";
+var TextTimeWeigth = "500";
+
+var PointsLeftTextColor = "inherit";
+var PointsRightColor = "inherit";
+var PointsFontSize = "15px";
+var PointsFontWeight = "500";
+
+//FreeTimeButton
+var FTText = "Activate Free Time";
+var FTTextColor = "#00d25b";
+var FTBackColor = "transparent";
+var FTBorderStyle = "1px solid #00d25b";
+var FTFontWeight = "500";
+var FTFontSize = "15px";
+
+//ConnectExtendButton
+var CETextColor = "#1E90FF";
+var CEBackColor = "transparent";
+var CEBorderStyle = "1px solid #1E90FF";
+var CEFontWeight = "500";
+
+//PauseResumeButton
+var PRTextColor =  "#ffab00";
+var PRBackColor = "transparent";
+var PRBorderStyle = "1px solid #ffab00";
+var PRFontWeight = "500";
+
+//RedeemButton
+var RTextColor = "#8f5fe8";
+var RBackColor = "transparent";
+var RBorderStyle = "1px solid #8f5fe8";
+var RFontWeight = "500";
+
+/*= END FIRST BOX =*/
+
+/*= CODE INPUT BOX =*/
+var _codeInTextHolder = "Input Code Here";
+var _codeInBoxBackColor = "rgb(200,200,200)";
+var _codeInBoxBorderRadius = "0.2rem";
+var _codeInBoxBorderStyle = "none";
+
+var _codeInBtnTextColor = "#fc424a";
+var _codeInBtnBackColor = "transparent";
+var _codeInBtnBorderStyle = "1px solid #fc424a";
+var _codeInBtnFontWeight = "500";
+/*= END CODE INPUT BOX =*/
+
+/*= SECOND BOX =*/
+var VendoTextColor = "#00d25b";
+var VendoBackColor = "transparent";
+var VendoFontSize = "18px";
+var VendoFontWeight = "500";
+var VendoBorderStyle = "none";
+
+var TextCurCreditTextColor = "inherit";
+var TextCurCreditTextFontSize = "15px";
+var TextCurCreditTextFontWeight = "500";
+
+var TextCreditColor = "#fff";
+var TextCreditFontSize = "18px";
+var TextCreditFontWeight = "500";
+
+var InfoText = "Client Info";
+var InfoTextColor = "#6c7293";
+var InfoBackColor = "transparent";
+var InfoBorderStyle = "1px solid #6c7293";
+var InfoTextFontWeight = "500";
+var InfoTextFontSize = "14px";
+
+var RateText = "Wifi Rate";
+var RateTextColor = "#6c7293";
+var RateBackColor = "transparent";
+var RateBorderStyle = "1px solid #6c7293";
+var RateTextFontWeight = "500";
+var RateTextFontSize = "14px";
+
+var InsertCoinButtonTextColor = "#ffab00";
+var InsertCoinButtonBackColor = "transparent";
+var InsertCoinRing1Color = "hsla(0, 0%, 0%, .5)";
+var InsertCoinRing2Color = "#ffab00";
+var InsertCoinRing3Color = "#ffab00";
+var InsertCoinRing4Color = "hsla(0, 0%, 0%, .5)";
+var InsertCoinButtonBoxShadow = "inset 0 0 2px 2px hsla(0,0%,0%,.2),inset 0 0 2px 4px hsla(0,0%,0%,.2),inset 0 0 2px 6px hsla(0,0%,0%,.2),\
+inset 0 0 1px 8px hsla(0,0%,0%,.5),inset 0 1px 1px 8px hsla(0,0%,100%,.25),inset 0 -30px 30px hsla(0,0%,0%,.2)";
+/*= END SECOND BOX =*/
+
+/*= MODAL BOX =*/
+var _modal_contentBackColor = "#000";
+var _modal_contentBorderRadius = "0.3rem";
+var _modal_contentBorderStyle = "1px solid #2c2e33";
+
+var _modal_contentTitleColor = "#fff";
+var _modal_contentTitleFontWeight = 500;
+
+var _modal_contentBodyBackColor = "#2A3038";
+var _modal_contentBodyBorderRadius = "0.3rem";
+
+//GCASH/MAYA CASHIN
+var _gmcLabelTextColor = "#fff";
+var _gmcLabelBackColor = "rgba(15,18,26,0.9)";
+var _gmcLabelBorderStyle = "none";
+
+var _gmcInputNumberTextHolder = "Account Number";
+var _gmcInputAmountTextHolder = "Amount to cash in 100-2000";
+var _gmcInputReceiverTextHolder = "Receiver Name";
+
+var _gmcInputBackColor = "rgb(200,200,200)";
+var _gmcInputBorderStyle = "none";
+
+var _gmcProgresColor = '#fff';
+var _gmcBodyBackColor = "rgba(15,18,26,0.9)";
+
+//Connect/Extend
+var _mconexXColor = "#a6a6a6";
+
+var UseCodeButtonTextColor = "#00d25b";
+var UseCodeButtonBackColor = "transparent";
+var UseCodeButtonBorderStyle = "1px solid #00d25b";
+var UseCodeButtonFontWeight = "500";
+
+var UseCreditButtonTextColor = "#00d25b";
+var UseCreditButtonBackColor = "transparent";
+var UseCreditButtonBorderStyle = "1px solid #00d25b";
+var UseCreditButtonFontWeight = "500";
+
+var _codeLabelTextColor = "inherit";
+var _codeLabelBackColor = "rgba(15,18,26,0.9)";
+var _codeLabelBorderStyle = "none";
+
+var _codeInputTextHolder = "Input Code Here";
+var _codeInputBackColor = "rgb(200,200,200)";
+var _codeInputBorderStyle = "none";
+
+var _creditLabelTextColor = "inherit";
+var _creditLabelBackColor = "rgba(15,18,26,0.9)";
+var _creditLabelBorderStyle = "none";
+
+var _creditInputTextHolder = "Input Credit Here";
+var _creditInputBackColor = "rgb(200,200,200)";
+var _creditInputBorderStyle = "none";
+
+var _mconexBtnAllTextColor = "#00d25b";
+var _mconexBtnAllBackColor = "transparent";
+var _mconexBtnAllBorderStyle = "1px solid #00d25b";
+
+var _mconexBtnTextColor = "#00d25b";
+var _mconexBtnBackColor = "transparent";
+var _mconexBtnBorderStyle = "1px solid #00d25b";
+
+//Redeem
+var _mreedemXColor = "#a6a6a6";
+var _mredeemSubTitleColor = "#a6a6a6";
+var _mredeemDurTextColor = "#00d25b";
+var _mredeemTypeTextColor = "#8f5fe8";
+var _mredeemPointsTextColor = "#8f5fe8";
+
+var _mredeemButtonTextColor = "#ffab00";
+var _mredeemButtonBackColor = "transparent";
+var _mredeemButtonBorderStyle = "1px solid #ffab00";
+
+//VendoList
+var _mvenlistXColor = "#a6a6a6";
+var _mvenlistButtonTextColor = "#00d25b";
+var _mvenlistDescTextColor = "inherit";
+var _mvenlistButtonBackColor = "transparent";
+var _mvenlistButtonBorderStyle = "1px solid #00d25b";
+
+//Insert Coin
+var _InGifHeight = "160px";
+var _InGifWidth = "250px";
+var _InGifRadius = "0.3rem";
+
+var _minsertCreditColor = "#00d25b";
+var _minsertVenColor = "inherit";
+var _minsertTotalCreditColor = "inherit";
+var _minsertPointDisText = "Points Earned: ";
+var _minsertPointDisColor = "#00d25b";
+var _minsertVTTVal = "inherit";
+
+var _minsertprogressbarHeight = "12px";
+var _minsertprogressbarBackColor = "#000";
+var _minsertprogressbarFrontColor = "#fff";
+var _minsertprogressbarRadius = "0.3rem";
+var _minsertprogressbarFont = "color: black;";//default or set "font-size: 12px; color: white;"
+
+var _minsertDoneTextColor = "#fc424a";
+var _minsertDoneBackColor = "transparent";
+var _minsertDoneBorderStyle = "1px solid #fc424a";
+
+var _minsertConExtTextColor = "#00d25b";
+var _minsertConExtBackColor = "transparent";
+var _minsertConExtBorderStyle = "1px solid #00d25b";
+
+//Client Info
+var _minfoXColor = "#a6a6a6";
+var _minfoLeftTextColor = "#00d25b";
+var _minfoRightTextColor = "#fff";
+
+//Wifi Rate
+var _mrateXColor = "#a6a6a6";
+var _mrateSubTitleColor = "inherit";
+var _mrateAmountTextColor = "#00d25b";
+var _mrateTimeTextColor = "#fff";
+var _mrateDiscTextColor = "#fff";
+
+//Others Modal
+var _ratescardborderstyle = "none";
+var _tableTextColor = "inherit";
+var _tableBackColor = "transparent";
+var _tableHeadTextColor = "inherit";
+//END MODAL BOX
+
+//Others
+var _defredirectUrl = "https://www.google.com/";
+var _inputTextColor = "rgb(25,25,25)";
+var _dashlogColor = "inherit";
+var _navBarBackColor = "rgb(29,30,34)";
+var _codeDefaultval = "none";
+var _iplyrcol = "#ffab00";
+
+var _textsuccess = "#00d25b";
+var _textwarning = "#ffab00";
+var _textwarningfontweight = "400";
+var _textprimary = "#6c7293"; //FullLogLeftText
+
+var _chatXColor = "#a6a6a6";
+var _chaticonColor = "#00d25b";
+var _chatChatMeColor = "#00d25b";
+var _chatTitleColor = "#fff";
+var _chatTitleName = "Admin";
+var _chatAvatar = ""; //225x225, Leave Empty For Default
+var _chatminWidth = 280;
+var _chatminHeight = 410;
+var _chatbackColor = "rgba(15,18,26,0.9)";
+var _chatborderRadius = "5px";
+var _chatborderStyle = "none";
+var _sendchatBtnTextColor = "rgb(10,13,19)";
+var _sendchatBtnBackColor = "rgb(200,200,200)";
+var _sendchatAdminInTextColor = "whitesmoke";
+var _sendchatAdminInBackColor = "#fc424a";
+var _sendchatInTextColor = "rgb(10,13,19)";
+var _sendchatInBackColor = "rgb(200,200,200)";
+var _chatInputTextColor = "inherit";
+var _chattimestampColor = "inherit";
+var _chatThumbsUpColor = "#00d25b";
+
+var _spinImage = "";//246x248, Leave Empty For Default
+var _spinbtnbackcolor = "#fff";
+var _spinbtnborderstyle = "4px solid #00d25b";
+var _spinbtntextcolor = "rgb(10,13,19)";
+var _spintricolor = "#00d25b";
+var _spintextTopColor = "#00d25b";
+var _spincloseColor = "#00d25b";
+
+var _scrollbarbackcolor = DefaultBodyTextColor;
+var _scrollbarfrontcolor = "black";
+var _scrollbarradius = "0.3rem";
+var _scrollbarheight = "1px";
+var _scrollbarwidth = "1px";
+
+var _TopCode = "The No.1 Piso Wifi Hotspot";
+var _topIcode = "<div style='display: flex; justify-content: center; text-align: center; font-size: 12px;'>Code:&nbsp;&nbsp;<div id='top-code'>none</div></div>";
+var _topImacip = "<div style='display: flex;justify-content: center;text-align: center;font-size: 12px;'>MAC:&nbsp;&nbsp;<div id='top-mac'>none</div>&nbsp;&nbsp;&nbsp;&nbsp;IP:&nbsp;&nbsp;<div id='top-ip'>none</div></div>";
+
+//APPLOC1
+var App1TextColor = "#8f5fe8";
+var App1BackColor = "transparent";
+var App1BorderStyle = "1px solid #8f5fe8";
+var App1TextFontWeight = "500";
+//APPLOC0
+var App0TextColor = "#8f5fe8";
+var App0BackColor = "transparent";
+var App0BorderStyle = "1px solid #8f5fe8";
+var App0TextFontWeight = "400";
+
+var CHomeBtn = '<div class="lds-load-b" style="height: 100%; color: red; top: 0; bottom: 0; margin: auto; position: fixed; left: 0; right: 0; z-index: 1; display: flex; justify-content: center; align-items: center; text-align: center;"></div><button id="btp" style="position: fixed;display: flex;justify-content: center;align-items: center;right: 50%;bottom: 0;transform: translate(50%,-50%);background: rgba(80,80,80,0.2);border: none;border-radius: 50%;height: 45px;width: 45px; z-index: 3;"><span class="mdi mdi-home" style="color: red; font-size: 32px; margin-top: 2px;"></span></button>';
+
+/*===== NO NEED TO EDIT BELOW  ========*/
 var _0x485880=_0x1a7d;(function(I,w){var W=_0x1a7d;for(I=I();;)try{if(parseInt(W(1223))/1+parseInt(W(1944))/2+parseInt(W(1833))/3*(parseInt(W(727))/4)+-parseInt(W(2597))/5+-parseInt(W(643))/6*(parseInt(W(2712))/7)+-parseInt(W(2740))/8+parseInt(W(1001))/9===w)break;else I.push(I.shift())}catch(Y){I.push(I.shift())}})(_0x367a,415501);
 var _0x358b69=function(){var I=!0;return function(w,W){var Y=I?function(){var B=_0x1a7d;if(W)return B=W[B(1611)](w,arguments),W=null,B}:function(){};return I=!1,Y}}(),_0x3a4461=_0x358b69(this,function(){var I=_0x1a7d;return _0x3a4461[I(1527)]()[I(1235)](I(673)).toString().constructor(_0x3a4461)[I(1235)](I(673))});_0x3a4461();document.title=document[_0x485880(2054)].replace(_0x485880(2351),"");document.currentScript[_0x485880(1910)]();
 var _0x121791=_0x485880(2364),_0x1f421b=_0x485880(1649),_0x41879f=""+_0x1f421b+", Custom Theme<br>&copy; WiFi5-Soft 2024",_0xae7f58="",_0x26f364=0,_0x467777=0,_0x4116b8=0,_0x10c238=[],_0x1dfd15=[],_0x5d1768=[],_0x55bd46=0,_0x8b99c=_0x485880(1906),_0x172aa0=1,_0x2481d1=0,_0x50a17e="",_0x28f0c7=0,_0x23dd61="",_0x1633b2,_0x129770,_0xd3168d=0,_0xc9e5e0=0,_0x162ce9=0,_0x9e082b,_0x4fe3f1,_0x274427=0,_0x23db11,_0x19cec6,_0x1b9cde=void 0,_0x5658ad=!1,_0x325608=1,_0x48069e=0,_0x2b73d1="",_0x27cfbe=0,_0x27bbc7=
