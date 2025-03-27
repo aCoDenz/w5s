@@ -33,7 +33,7 @@
 		"VENDOTEXTCOLOR":"x",
 		"INSERTCOINEFFECT":"wiggle",
 		"INSERTCOINTEXT":"Insert Coin",
-		"INSERTCOINBACKCOLOR":"rgb( 33, 160, 73 ); height: 40px; font-size: 18px; text-transform: uppercase; text-decoration: none; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;",
+		"INSERTCOINBACKCOLOR":"rgb( 33, 160, 73 )",
 		"INSERTCOINTEXTCOLOR":"x",
 		"INSERTCOINGIF":"x",
 		"INSERTCONEXBACKCOLOR":"x",
