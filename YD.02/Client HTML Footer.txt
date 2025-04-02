@@ -58,6 +58,7 @@
 		"CODEONLYPORTAL":0,
 		"CONEXTALLCREDITBTN":0,
 		"FREETIMEMSG":"x",
+		"RANDINSERTMP3":"x",
 		"CONNECTEDMP3":"Connected.mp3",
 		"PAUSEMP3":"Paused.mp3",
 		"DISCONNECTEDMP3":"Disconnected.mp3",
