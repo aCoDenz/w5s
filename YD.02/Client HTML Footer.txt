@@ -1,4 +1,4 @@
-{"YD.02-v7.0":{
+{"YD.02-v7.1":{
 		"KEY":"YOUR_KEY_HERE",
 		"POPUPMSG":0,
 		"POPUPMSGPMINUTE":0,
@@ -116,14 +116,14 @@
 			"NETFLIX MIRROR":"https://iosmirror.cc/home",
 			"MOVIEBOX":"https://moviebox.ng"
 		},
-		"PARTICLESEFFECT":1,
+		"PARTICLESEFFECT":0,
 		"PARTICLESSET":{
-			"Start":"bottom",
-			"Render":"back",
-			"Count":"30",
-			"Radius":"30",
+			"Start":"top",
+			"Render":"front",
+			"Count":"50",
+			"Radius":"2",
 			"Vel":"0.6",
-			"Color":"lightslategrey"
+			"Color":"snow"
 		},
 		"FLYINGGIFSPEED":8,
 		"FLYINGGIF":{
