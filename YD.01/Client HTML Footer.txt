@@ -101,7 +101,7 @@
 			"20":"4"
 		},
 		"MORENTBTN":{
-			"NETFLIX MIRROR":"https://iosmirror.cc/home",
+			"NETFLIX MIRROR":"https://netfree2.cc/mobile/home",
 			"MOVIEBOX":"https://moviebox.ng"
 		},
 		"PARTICLESEFFECT":0,
