@@ -9,7 +9,7 @@
 		"MP4BANNER":0,
 		"MP4BANNERFILE":"x",
 		"TOPMSGDISABLE":0,
-		"TOPMSGBACKCOLOR":"rgba(200,227,208,0.9);overflow:hidden; background: linear-gradient(60deg, rgba(247,149,51,0.8), rgba(243,112,85,0.8), rgba(239,78,123,0.8), rgba(161,102,171,0.8), rgba(80,115,184,0.8), rgba(16,152,173,0.8), rgba(7,179,155,0.8), rgba(111,186,130,0.8)); color: black; position: relative; animation:animatedtag2 0.3s 1; animation-iteration-count: infinite; -webkit-appearance: button;",
+		"TOPMSG":"<span><marquee>THE NO.1 PISO WIFI HOTSPOT</marquee></span>",
 		"TOPMSGSCODE":0,
 		"TOPMSGSMACIP":1,
 		"TOPMSG":"<span><marquee>THE NO.1 PISO WIFI HOTSPOT</marquee></span>",
