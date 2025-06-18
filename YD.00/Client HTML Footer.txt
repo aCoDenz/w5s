@@ -74,11 +74,11 @@
 		},
 		"PARTICLESEFFECT":0,
 		"PARTICLESSET":{
-			"Start":"top",
-			"Render":"front",
-			"Count":"50",
-			"Radius":"2",
-			"Vel":"0.6",
+			"Start":"center",
+			"Render":"back",
+			"Count":"15",
+			"Radius":"2.2",
+			"Vel":"0.5",
 			"Color":"snow"
 		},
 		"FLYINGGIFSPEED":8,
