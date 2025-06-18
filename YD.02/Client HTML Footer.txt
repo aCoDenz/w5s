@@ -9,7 +9,7 @@
 		"MP4BANNER":0,
 		"MP4BANNERFILE":"x",
 		"TOPMSGDISABLE":0,
-		"TOPMSG":"<span><marquee>THE NO.1 PISO WIFI HOTSPOT</marquee></span>",
+		"TOPMSGBACKCOLOR":"rgba(200,227,208,0.9)",
 		"TOPMSGSCODE":0,
 		"TOPMSGSMACIP":1,
 		"TOPMSG":"<span><marquee>THE NO.1 PISO WIFI HOTSPOT</marquee></span>",
