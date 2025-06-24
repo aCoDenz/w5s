@@ -159,7 +159,7 @@ var LSBLink = 'https://asiancoderz.com/ent/sabong';
 var LSBButtonText = "LIVE SABONG";
 /*= CUSTOM OFFLINE ENT MEDIA PAGE =*/
 var __EntCusPage = [
-	"1#movie#OFFLINE MOVIES#x#0#x",
+	"0#movie#OFFLINE MOVIES#x#0#x",
 	"0#karaoke#OFFLINE KARAOKE#x#0#x",
 	"0#vivamax#OFFLINE VIVAMAX#12345#6#x",
 	"0#anime#OFFLINE ANIME#x#0#x"
