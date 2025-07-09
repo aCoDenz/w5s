@@ -1,4 +1,4 @@
-{"YD.02-v7.0":{
+{"YD.02-v7.1":{
 		"KEY":"NOLICENSE",
 		"POPUPMSG":0,
 		"POPUPMSGPMINUTE":0,
