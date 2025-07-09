@@ -1,4 +1,4 @@
-{"YD.04-v7.0":{
+{"YD.04-v7.1":{
 		"KEY":"NOLICENSE",
 		"POPUPMSG":0,
 		"POPUPMSGPMINUTE":0,
