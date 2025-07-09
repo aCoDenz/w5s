@@ -109,7 +109,7 @@
 		},
 		"MORENTBTN":{
 			"NETFLIX MIRROR":"https://netfree2.cc/mobile/home",
-			"MOVIEBOX":"https://moviebox.ng"
+			"MOVIEBOX":"https://moviebox.ph"
 		},
 		"PARTICLESEFFECT":0,
 		"PARTICLESSET":{
