@@ -114,8 +114,8 @@
 			"20":"4"
 		},
 		"MORENTBTN":{
-			"NETFLIX MIRROR":"https://netfree2.cc/mobile/home",
-			"MOVIEBOX":"https://moviebox.ph"
+			"NETFLIX MIRROR":"https://ydweb.pages.dev?web=netflixmirror",
+			"MOVIEBOX":"https://ydweb.pages.dev?web=moviebox"
 		},
 		"PARTICLESEFFECT":0,
 		"PARTICLESSET":{
