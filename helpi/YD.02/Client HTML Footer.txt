@@ -13,7 +13,7 @@
 		"TOPMSGSCODE":0,
 		"TOPMSGSMACIP":0,
 		"TOPMSG":"<span class='mdi mdi-star mdi-spin'></span>&nbsp;<b>WELCOME CLIENT</b>&nbsp;<span class='mdi mdi-star mdi-spin'></span><marquee><span style='font-size: 12px;'>INSERT COIN, EARN POINTS, REDEEM TIME</span></marquee>",
-		"BOTMSG":"Powered By: <a href='https://www.facebook.com/HelpiDeskSolution' target='_blank' style='color: darkorange;font-weight: 500;'>Helpi Desk</a><br>Computer, Printer &amp; Vendo WiFi<br>Services",
+		"BOTMSG":"<hr style='margin: auto;margin-bottom: 10px !important;'>Powered By: <a href='https://www.facebook.com/HelpiDeskSolution' target='_blank' style='color: darkorange;font-weight: 500;'>Helpi Desk</a><br>Computer, Printer &amp; Vendo WiFi<br>Services",
 		"THEMEMAINCOLOR1":"x",
 		"THEMEMAINCOLOR2":"x",
 		"THEMEBUTTONTEXTCOLOR":"x",
