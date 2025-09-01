@@ -1,4 +1,4 @@
-{"YD.04-v7.1":{
+{"YD.04-v7.2":{
 		"KEY":"YOUR_KEY_HERE",
 		"POPUPMSG":0,
 		"POPUPMSGPMINUTE":0,
