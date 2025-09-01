@@ -8,7 +8,7 @@
 		"BACKGROUNDMP3MUSIC":"x",
 		"MP4BANNER":0,
 		"MP4BANNERFILE":"x",
-		"BOTMSG":"Powered By: <a href='https://wifi5-soft.com/' target='_blank' style='color: inherit;'><u>WiFi5-Soft</u></a>",
+		"BOTMSG":"<hr style='margin: auto;margin-bottom: 10px !important;'>Powered By: <a href='https://wifi5-soft.com/' target='_blank' style='color: inherit;'><u>WiFi5-Soft</u></a>",
 		"THEMEMAINCOLOR1":"x",
 		"THEMEMAINCOLOR2":"x",
 		"THEMEBUTTONTEXTCOLOR":"x",
