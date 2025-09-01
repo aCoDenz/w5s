@@ -12,7 +12,7 @@
 		"TOPMSGSCODE":0,
 		"TOPMSGSMACIP":1,
 		"TOPMSG":"<span><marquee>THE NO.1 PISO WIFI HOTSPOT</marquee></span>",
-		"BOTMSG":"Powered By: <a href='https://wifi5-soft.com/' target='_blank' style='color: inherit;'><u>WiFi5-Soft</u></a>",
+		"BOTMSG":"<hr style='margin: auto;margin-bottom: 10px !important;'>Powered By: <a href='https://wifi5-soft.com/' target='_blank' style='color: inherit;'><u>WiFi5-Soft</u></a>",
 		"GBTNBRADIUS":"x",
 		"VISIBLECODEINPUT":1,
 		"INSERTCOINGIF":"x",
