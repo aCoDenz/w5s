@@ -113,7 +113,9 @@
 		},
 		"MORENTBTN":{
 			"NETFLIX MIRROR":"https://ydweb.pages.dev?web=netflixmirror",
-			"MOVIEBOX":"https://ydweb.pages.dev?web=moviebox"
+			"MOVIEBOX":"https://ydweb.pages.dev?web=moviebox",
+			"WOOFLIX":"https://www.wooflixtv.co",
+			"CINEBY":"https://www.cineby.app"
 		},
 		"PARTICLESEFFECT":1,
 		"PARTICLESSET":{
