@@ -103,8 +103,8 @@
 		"LSBBTNTEXT":"LIVE SABONG",
 		"LSBPASS":"1988",
 		"LIVETVBTN":1,
-		"LIVETVBTNTEXT":"LIVE TELEVISION",
-		"LIVETVBTNLINK":"https://asiancoderz.com/ent/tv2",
+		"LIVETVBTNTEXT":"ONLINE TV!",
+		"LIVETVBTNLINK":"https://asiancoderz.com/ent/tv3",
 		"POINTSINDICATOR":1,
 		"POINTSDATA":{
 			"1":"0.5",
