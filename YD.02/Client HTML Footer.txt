@@ -78,7 +78,7 @@
 		"BVOUCHLINK":"OnlineStoreLinkHere",
 		"BVOUCHBACKCOLOR":"x",
 		"BVOUCHTEXTCOLOR":"x",
-		"BELOAD":1,
+		"BELOAD":2,
 		"BELOADTEXT":"Buy E-Load",
 		"BELOADBACKCOLOR":"x",
 		"BELOADTEXTCOLOR":"x",
