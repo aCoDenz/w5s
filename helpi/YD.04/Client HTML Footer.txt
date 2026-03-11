@@ -105,7 +105,7 @@
 		"LSBPASS":"1988",
 		"LIVETVBTN":1,
 		"LIVETVBTNTEXT":"ONLINE TV!",
-		"LIVETVBTNLINK":"https://asiancoderz.com/ent/tv3",
+		"LIVETVBTNLINK":"https://ydhub.pages.dev/ent/tv",
 		"POINTSINDICATOR":1,
 		"POINTSDATA":{
 			"1":"0.5",
