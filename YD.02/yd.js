@@ -148,7 +148,7 @@ var MovieOffButtonText = "OFFLINE MOVIES";
 /*= LIVETV BTN =*/
 var LIVETVButtonText = "LIVE TELEVISION";
 /*= VIVAMAX ONLINE BTN =*/
-var VVM2Link = 'https://asiancoderz.com/ent/vivamax';
+var VVM2Link = 'https://ydhub.pages.dev/ent/vivamax';
 var VVM2ButtonText = "ONLINE VIVAMAX";
 /*= CUSTOM OFFLINE ENT MEDIA PAGE =*/
 var __EntCusPage = [
