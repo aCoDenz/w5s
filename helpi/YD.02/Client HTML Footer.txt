@@ -104,7 +104,7 @@
 		"LSBPASS":"1988",
 		"LIVETVBTN":1,
 		"LIVETVBTNTEXT":"ONLINE TV!",
-		"LIVETVBTNLINK":"https://ydhub.pages.dev/ent/tv",
+		"LIVETVBTNLINK":"https://ydhub.pages.dev/ent/otv",
 		"POINTSINDICATOR":1,
 		"POINTSDATA":{
 			"1":"0.5",
