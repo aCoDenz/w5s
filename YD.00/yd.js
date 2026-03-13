@@ -134,7 +134,7 @@ var MovieOffButtonText = "OFFLINE MOVIES";
 /*= LIVETV BTN =*/
 var LIVETVButtonText = "LIVE TELEVISION";
 /*= VIVAMAX ONLINE BTN =*/
-var VVM2Link = 'https://ydhub.pages.dev/ent/vivamax';
+var VVM2Link = 'https://ydhub.pages.dev/ent/vtv';
 var VVM2ButtonText = "ONLINE VIVAMAX";
 /*= LIVE SABONG BTN =*/
 var LSBLink = 'https://ydhub.pages.dev/ent/sabong';
