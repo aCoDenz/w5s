@@ -101,7 +101,7 @@
 		"ONVVMPASS":"12345",
 		"LIVETVBTN":1,
 		"LIVETVBTNTEXT":"ONLINE TV!",
-		"LIVETVBTNLINK":"https://ydhub.pages.dev/ent/tv",
+		"LIVETVBTNLINK":"https://ydhub.pages.dev/ent/otv",
 		"POINTSINDICATOR":0,
 		"POINTSDATA":{
 			"5":"1",
