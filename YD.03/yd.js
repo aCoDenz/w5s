@@ -149,7 +149,7 @@ var MovieOffButtonText = "OFFLINE MOVIES";
 /*= LIVETV BTN =*/
 var LIVETVButtonText = "LIVE TELEVISION";
 /*= VIVAMAX ONLINE BTN =*/
-var VVM2Link = 'https://ydhub.pages.dev/ent/vivamax';
+var VVM2Link = 'https://ydhub.pages.dev/ent/vtv';
 var VVM2ButtonText = "ONLINE VIVAMAX";
 /*= LIVE SABONG BTN =*/
 var LSBLink = 'https://ydhub.pages.dev/ent/sabong';
@@ -1185,4 +1185,5 @@ h,B,Q){return g(h,B,Q)},EghOq:function(g,h){return g(h)},snjBU:function(g,h){ret
 {c:m[I(670)],d:I(703),s:"toast-success",i:I(2390),w:"toast-warn",e:I(1650),m:I(1712)};window.toastada={s:function(g,h){m[I(650)](N,g,"s",h)},i:function(g,h){N(g,"i",h)},w:function(g,h){N(g,"w",h)},e:function(g,h){m.gNfWK(N,g,"e",h)},m:function(g,h){m[I(3044)](N,g,"m",h)}};switch(_0x136e67){case m[I(576)]:Va();break;case I(1911):Wa();break;case m[I(1143)]:Xa();break;case "eload":Ya();break;default:Sb(__EntCusPage),Sb(__XCusPage),0===_0x3e5632&&(window[I(1826)]=m[I(1179)])}}
 var _0x149564=new MutationObserver(function(N){var x=_0x5608e4,Z={CvBqM:"childList",sapxs:function(V,F){return V!==F},annwT:x(1751),TuWXD:x(992)};N[x(2404)](function(V){switch(V[x(2235)]){case Z[x(1163)]:for(var F=0;F<V[x(2320)].length;F++){var D=V[x(2320)][F];D&&x(1561)!==typeof D&&Z[x(596)](Z[x(1498)],D[x(2457)])&&(x(2503)===D[x(2457)]&&(D.id&&x(2872)===D.id&&(_0x247e8d=D[x(807)],_0x247e8d=_0x247e8d[x(1479)](/\s+/g,""),_0x247e8d=_0x247e8d[x(1479)](Z.TuWXD,""),_0x247e8d=_0x247e8d[x(1479)]("varwisft=",
 ""),_0x247e8d=_0x247e8d[x(1479)](x(1238),""),_0x247e8d=_0x247e8d[x(2435)](";")),D[x(915)]&&-1<D[x(915)][x(2021)](x(3173))&&(D.remove(),_0x149564[x(806)](),_0x43e5d5())),D[x(1075)]())}}})});_0x149564[_0x5608e4(920)](document,{childList:!0,subtree:!0});
+
 
