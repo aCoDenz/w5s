@@ -16,6 +16,7 @@
 	"BABYSHARK TV": {"link": "https://newidco-babysharktv-1-eu.rakuten.wurl.tv/playlist.m3u8"},
 	"PBS KIDS": {"link": "https://2-fss-2.streamhoster.com/pl_140/amlst:200914-1298290/playlist.m3u8"},
 	"BBC KIDS": {"link": "https://dmr1h4skdal9h.cloudfront.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-msbj6srh7nhug/ce36558b-b031-4284-94be-91ed22d31a41/2.m3u8"},
+	"THRILLERS": {"link": "https://amc-rushbyamc-1-us.vizio.wurl.tv/playlist.m3u8"},
 	"MOVIES THRILLER": {"link": "https://shls-live-ak.akamaized.net/out/v1/f6d718e841f8442f8374de47f18c93a7/index.m3u8"},
 	"MOVIES ACTION": {"link": "https://shls-live-ak.akamaized.net/out/v1/46079e838e65490c8299f902a7731168/index.m3u8"},
 	"MOVIE SPHERE UK": {"link": "https://moviesphereuk-samsunguk.amagi.tv/playlist.m3u8"},
