@@ -152,7 +152,7 @@ var LIVETVButtonText = "LIVE TELEVISION";
 var VVM2Link = 'https://ydhub.pages.dev/ent/vtv';
 var VVM2ButtonText = "ONLINE VIVAMAX";
 /*= LIVE SABONG BTN =*/
-var LSBLink = 'https://ydhub.pages.dev/ent/sabong';
+var LSBLink = 'https://ydhub.pages.dev/ent/stv';
 var LSBButtonText = "LIVE SABONG";
 /*= CUSTOM OFFLINE ENT MEDIA PAGE =*/
 var __EntCusPage = [
