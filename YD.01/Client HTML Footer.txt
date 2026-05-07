@@ -98,7 +98,8 @@
 			"20":"4"
 		},
 		"MORENTBTN":{
-			"KARAOKE TV":"https://ydktv.pages.dev",
+			"KARAOKE MIDI":"https://ydktv.pages.dev",
+			"KARAOKE YOUTUBE":"https://ydktv2.pages.dev",
 			"NETFLIX MIRROR":"https://ydweb.pages.dev?web=netflixmirror",
 			"MOVIEBOX":"https://ydweb.pages.dev?web=moviebox"
 		},
