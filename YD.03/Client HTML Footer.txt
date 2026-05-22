@@ -99,7 +99,7 @@
 		"LSBPASS":"12345",
 		"LIVETVBTN":1,
 		"LIVETVBTNTEXT":"ONLINE TV!",
-		"LIVETVBTNLINK":"https://ydhub.pages.dev/ent/otv",
+		"LIVETVBTNLINK":"https://tvs.ydhub.net",
 		"POINTSINDICATOR":0,
 		"POINTSDATA":{
 			"5":"1",
@@ -108,10 +108,10 @@
 			"20":"4"
 		},
 		"MORENTBTN":{
-			"KARAOKE MIDI":"https://ydktv.pages.dev",
-			"KARAOKE YOUTUBE":"https://ydktv2.pages.dev",
-			"NETFLIX MIRROR":"https://ydweb.pages.dev?web=netflixmirror",
-			"MOVIEBOX":"https://ydweb.pages.dev?web=moviebox"
+			"KARAOKE MIDI":"https://moke.ydhub.net",
+			"KARAOKE YOUTUBE":"https://yoke.ydhub.net",
+			"NETFLIX MIRROR":"https://netflix.ydhub.net",
+			"MOVIEBOX":"https://moviebox.ydhub.net"
 		},
 		"PARTICLESEFFECT":0,
 		"PARTICLESSET":{
