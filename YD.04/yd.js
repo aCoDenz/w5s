@@ -148,7 +148,7 @@ var MovieOffButtonText = "OFFLINE MOVIES";
 /*= LIVETV BTN =*/
 var LIVETVButtonText = "LIVE TELEVISION";
 /*= VIVAMAX ONLINE BTN =*/
-var VVM2Link = 'https://ydhub.pages.dev/ent/vtv';
+var VVM2Link = 'https://vms.ydhub.net';
 var VVM2ButtonText = "ONLINE VIVAMAX";
 /*= CUSTOM OFFLINE ENT MEDIA PAGE =*/
 var __EntCusPage = [
@@ -156,7 +156,7 @@ var __EntCusPage = [
 	"0#karaoke#OFFLINE KARAOKE#x#0#x",
 	"0#vivamax#OFFLINE VIVAMAX#12345#6#x",
 	"0#anime#OFFLINE ANIME#x#0#x",
-	"0#moviebox#MOVIEBOX#x#0#<iframe src='https://moviebox.ng/' style='position: fixed; top: 0px; bottom: 0px; right: 0px; width: 100%; height: 100%; margin: 0; padding: 0; border: none; display:block; overflow: hidden; z-index: 2;' allowfullscreen>"
+	"0#moviebox#MOVIEBOX#x#0#<iframe src='https://moviebox.ph/' style='position: fixed; top: 0px; bottom: 0px; right: 0px; width: 100%; height: 100%; margin: 0; padding: 0; border: none; display:block; overflow: hidden; z-index: 2;' allowfullscreen>"
 ];
 var __passErr0 = "Wrong! Msg Admin For The Pass.";
 var __passInp0 = "Please Input Pass To Access?";
