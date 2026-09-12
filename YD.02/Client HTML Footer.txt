@@ -113,7 +113,7 @@
 			"KARAOKE MIDI":"https://moke.ydhub.net",
 			"KARAOKE YOUTUBE":"https://yoke.ydhub.net",
 			"NETFLIX MIRROR":"https://netflix.ydhub.net",
-			"MOVIEBOX":"https://moviebox.ydhub.net"
+			"CINEJOY":"https://cinejoy.to"
 		},
 		"PARTICLESEFFECT":0,
 		"PARTICLESSET":{
